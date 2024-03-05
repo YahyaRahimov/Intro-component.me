@@ -1,60 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Intro component</title>
-
-  <!-- Google-fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- CSS-STYLES -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <main class="main-content">
-    <div class="home-container container">
-
-      <!-- INFO-SECTION -->
-      <section class="info">
-        <div class="info-content">
-          <div class="info-texts-wrapper">
-            <p class="subject-info"> frontend and backend</p>
-            <h2 class="info-heading">Learn to program by watching professionals</h2>
-            <p class="info-text">See how experienced developers solve problems in real time</p>
-          </div>
-        </div>
-
-        <a class="info-button" href="#">Try it free 7 days, then $20/mo</a>
-      </section>
-
-
-      <!-- FORM-SECTION -->
-      <section class="form-section">
-        <div class="form-content">
-          <h2 class="form-heading">Sign up for the course and get free 7 days</h2>
-
-          <form action="https://echo.htmlacademy.ru" method="GET">
-            <div class="inputs-wrapper">
-              <input class="input-style" type="text" name="name" placeholder="Name" aria-label="name" required>
-              <input class="input-style" type="text" name="last_name" placeholder="Last name" aria-label="Last_name" required>
-              <input class="input-style" type="email" name="email" placeholder="Email Adress" aria-label="email-adress" required>
-              <input class="input-style" type="password" name="password" placeholder="Password" aria-label="password" required>
-            </div>
-
-            <button class="form-button" type="submit"> Claim your free trial</button>
-          </form>
-          <p class="form-section-text">By clicking the button, you are agreeing to our
-            <a class="text-link" href="#">Terms and Services</a>
-          </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <h4 class="mine">
+      <a
+        href="https://www.youtube.com/channel/UCUcemL3X42d5lkcdtTlnbYQ/featured"
+      >
+        Akhror Soliev (link)
+      </a>
+    </h4>
+    <main>
+      <section class="player player--0  player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
         </div>
       </section>
-    </div>
-  </main>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
 
-  <script src="js/main.js"></script>
-</body>
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
