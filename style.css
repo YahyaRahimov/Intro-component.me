@@ -213,9 +213,9 @@ a:hover {
 /* IMG */
 .dice {
   position: absolute;
-  left: 50%;
+  left: 51%;
   top: 22.5rem;
-  transform: translateX(-50%);
+  transform: scale(1.7) translateX(-50%);
   height: 4rem;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
 }
@@ -235,7 +235,8 @@ a:hover {
   top: 15.9rem;
 }
 .btn--roll {
-  top: 30.3rem;
+  top: 33.3rem;
+
 }
 .btn--hold {
   top: 39.1rem;
